@@ -1,0 +1,13 @@
+str = input("Введите строку ")
+def format(str):
+    a = 0
+    list = []
+    for x in str:
+        if a % 2 == 0:
+            a += 1
+            list.append(x.upper())
+        else:
+            a += 1
+            list.append(x.lower())
+    print(''.join(list))
+format(str)
