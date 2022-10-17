@@ -1,0 +1,18 @@
+
+chislo = float(input('Введите число: '))
+
+summa = 0.0
+kolvo = 0
+if chislo == 0:
+   print('Ошибка')
+
+while chislo != 0:
+    summa += chislo
+    kolvo += 1
+    chislo = float(input('Введите число: '))
+if kolvo != 0:
+    SA = summa / kolvo
+else:
+    SA = 0.0
+
+print('Среднее арифметическое равно', SA)
