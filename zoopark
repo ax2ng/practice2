@@ -1,0 +1,31 @@
+vozrast = int(input('Введите свой возраст: '))
+
+group = 0.00
+cena1 = 0.00
+cena2 = 14.00
+cena3 = 18.00
+cena4 = 23.00
+
+
+while vozrast != 0:
+    vozrast = int(input('Введите свой возраст: '))
+
+    if vozrast <= 2:
+
+        group += cena1
+
+    elif 3 <= vozrast <= 12:
+
+        group += cena2
+
+    elif vozrast >= 65:
+
+        group += cena3
+
+
+else:
+
+    group += cena4
+
+
+print(group)
